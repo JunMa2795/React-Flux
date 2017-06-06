@@ -1,8 +1,15 @@
 /**
  * Created by jack on 5/23/17.
  */
-$ = jQuery = require('jquery');
+"use strict";
 
-var App = console.log('Hello world from Browserify');
+var React = require('react');
+var Router = require('react-router');
+var routes = require('./routes')
 
-module.exports = App;
+// Clean URL, HTML5 push state
+// Router.run(routes, Router.HistoryLocation, function(Handler){
+
+Router.run(routes, function(Handler){
+    React.render(<Handler/>, document.getElementById('app'));
+});

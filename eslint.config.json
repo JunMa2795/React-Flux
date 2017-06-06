@@ -1,7 +1,9 @@
 {
   "root": true,
-  "ecmaFeatures": {
-    "jsx": true
+  "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+    }
   },
   "env": {
     "browser": true,
@@ -9,14 +11,14 @@
     "jquery": true
   },
   "rules": {
-    "quotes": [2, "single"],
-    "no-redeclare": 2,
-    "no-trailing-spaces": 2,
-    "eol-last": 2,
-    "no-unused-vars": 2,
-    "no-underscore-dangle": 2,
-    "no-alert": 2,
-    "no-lone-blocks": 2
+    "quotes": 0,
+    "no-redeclare": 0,
+    "no-trailing-spaces": 0,
+    "eol-last": 0,
+    "no-unused-vars": 0,
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "no-lone-blocks": 0
   },
   "globals": {
     "jQuery": true,
